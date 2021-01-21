@@ -233,7 +233,7 @@ public class ManagerUI : MonoBehaviour
         buttonRemoveCharacter.color = isRemovingCharacter ? redRemove : grayButton;
 
         for (int i = 0; i < parentCharacters.childCount; i++)
-            parentCharacters.GetChild(i).GetComponent<Image>().color = isRemovingCharacter ? redRemove : Color.white;
+            parentCharacters.GetChild(i).GetComponent<Image>().color = isRemovingCharacter ? redRemove : new Color(150 / 255f, 150 / 255f, 150 / 255f);
     }
     #endregion
 
@@ -339,7 +339,7 @@ public class ManagerUI : MonoBehaviour
         buttonRemoveTarget.color = isRemovingTarget ? redRemove : grayButton;
 
         for (int i = 0; i < parentTargets.childCount; i++)
-            parentTargets.GetChild(i).GetComponent<Image>().color = isRemovingTarget ? redRemove : Color.white;
+            parentTargets.GetChild(i).GetComponent<Image>().color = isRemovingTarget ? redRemove : new Color(150 / 255f, 150 / 255f, 150 / 255f);
     }
     #endregion
 
@@ -580,7 +580,7 @@ public class ManagerUI : MonoBehaviour
         buttonRemoveSpell.color = isRemovingSpell ? redRemove : grayButton;
 
         for (int i = 0; i < parentSpells.childCount; i++)
-            parentSpells.GetChild(i).GetComponent<Image>().color = isRemovingSpell ? redRemove : Color.white;
+            parentSpells.GetChild(i).GetComponent<Image>().color = isRemovingSpell ? redRemove : new Color(150 / 255f, 150 / 255f, 150 / 255f);
     }
     #endregion
 
